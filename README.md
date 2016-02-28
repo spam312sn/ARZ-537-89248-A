@@ -59,11 +59,11 @@ $ sudo nano /etc/apache2/sites-available/000-default.conf
 <VirtualHost *:80>
     # Change to your server name
     ServerName 37.139.13.167
-    DocumentRoot /var/www/ARZ-537-89248/
+    DocumentRoot /var/www/ARZ-537-89248-A/
     DirectoryIndex index.php
-    ErrorLog /var/www/ARZ-537-89248/log/error.log
-    CustomLog /var/www/ARZ-537-89248/log/access.log combined
-    <Directory "/var/www/ARZ-537-89248/">
+    ErrorLog /var/www/ARZ-537-89248-A/log/error.log
+    CustomLog /var/www/ARZ-537-89248-A/log/access.log combined
+    <Directory "/var/www/ARZ-537-89248-A/">
         AllowOverride All
         Allow from All
     </Directory>
@@ -88,8 +88,8 @@ $ sudo apt-get install git
 $ git config --global user.name "John Doe"
 $ git config --global user.email "johndoe@gmail.com"
 $ cd /var/www/
-$ git clone https://gitlab.com/spam312sn/ARZ-537-89248.git
-$ cd ARZ-537-89248
+$ git clone https://gitlab.com/spam312sn/ARZ-537-89248-A.git
+$ cd ARZ-537-89248-A
 $ mkdir log
 $ chmod -R 755 ./
 ```
